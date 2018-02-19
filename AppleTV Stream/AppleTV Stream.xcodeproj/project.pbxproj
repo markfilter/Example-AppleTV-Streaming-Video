@@ -15,6 +15,7 @@
 		7187A092203B5AF500BB1E58 /* AppleTV_StreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A091203B5AF500BB1E58 /* AppleTV_StreamUITests.swift */; };
 		7187A0A2203B5B5100BB1E58 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A1203B5B5100BB1E58 /* NetworkUtils.swift */; };
 		7187A0A4203B5B5F00BB1E58 /* ConsoleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A3203B5B5F00BB1E58 /* ConsoleUtils.swift */; };
+		7187A0A7203B5DCD00BB1E58 /* VideoResourFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A6203B5DCD00BB1E58 /* VideoResourFiles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7187A093203B5AF500BB1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7187A0A1203B5B5100BB1E58 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		7187A0A3203B5B5F00BB1E58 /* ConsoleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleUtils.swift; sourceTree = "<group>"; };
+		7187A0A6203B5DCD00BB1E58 /* VideoResourFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResourFiles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		7187A073203B5AF500BB1E58 /* AppleTV Stream */ = {
 			isa = PBXGroup;
 			children = (
+				7187A0A5203B5DA600BB1E58 /* Model */,
 				7187A0A0203B5B3C00BB1E58 /* Utils */,
 				7187A09F203B5B3200BB1E58 /* AppDelegate */,
 				7187A076203B5AF500BB1E58 /* ViewController.swift */,
@@ -142,6 +145,14 @@
 				7187A0A3203B5B5F00BB1E58 /* ConsoleUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7187A0A5203B5DA600BB1E58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7187A0A6203B5DCD00BB1E58 /* VideoResourFiles.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7187A077203B5AF500BB1E58 /* ViewController.swift in Sources */,
+				7187A0A7203B5DCD00BB1E58 /* VideoResourFiles.swift in Sources */,
 				7187A0A4203B5B5F00BB1E58 /* ConsoleUtils.swift in Sources */,
 				7187A0A2203B5B5100BB1E58 /* NetworkUtils.swift in Sources */,
 				7187A075203B5AF500BB1E58 /* AppDelegate.swift in Sources */,
