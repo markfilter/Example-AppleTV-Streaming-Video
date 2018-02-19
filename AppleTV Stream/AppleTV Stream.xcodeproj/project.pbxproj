@@ -13,6 +13,8 @@
 		7187A07C203B5AF500BB1E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7187A07B203B5AF500BB1E58 /* Assets.xcassets */; };
 		7187A087203B5AF500BB1E58 /* AppleTV_StreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A086203B5AF500BB1E58 /* AppleTV_StreamTests.swift */; };
 		7187A092203B5AF500BB1E58 /* AppleTV_StreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A091203B5AF500BB1E58 /* AppleTV_StreamUITests.swift */; };
+		7187A0A2203B5B5100BB1E58 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A1203B5B5100BB1E58 /* NetworkUtils.swift */; };
+		7187A0A4203B5B5F00BB1E58 /* ConsoleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A3203B5B5F00BB1E58 /* ConsoleUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		7187A08D203B5AF500BB1E58 /* AppleTV StreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AppleTV StreamUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7187A091203B5AF500BB1E58 /* AppleTV_StreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTV_StreamUITests.swift; sourceTree = "<group>"; };
 		7187A093203B5AF500BB1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7187A0A1203B5B5100BB1E58 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		7187A0A3203B5B5F00BB1E58 /* ConsoleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,8 @@
 		7187A073203B5AF500BB1E58 /* AppleTV Stream */ = {
 			isa = PBXGroup;
 			children = (
-				7187A074203B5AF500BB1E58 /* AppDelegate.swift */,
+				7187A0A0203B5B3C00BB1E58 /* Utils */,
+				7187A09F203B5B3200BB1E58 /* AppDelegate */,
 				7187A076203B5AF500BB1E58 /* ViewController.swift */,
 				7187A078203B5AF500BB1E58 /* Main.storyboard */,
 				7187A07B203B5AF500BB1E58 /* Assets.xcassets */,
@@ -120,6 +125,23 @@
 				7187A093203B5AF500BB1E58 /* Info.plist */,
 			);
 			path = "AppleTV StreamUITests";
+			sourceTree = "<group>";
+		};
+		7187A09F203B5B3200BB1E58 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7187A074203B5AF500BB1E58 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7187A0A0203B5B3C00BB1E58 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7187A0A1203B5B5100BB1E58 /* NetworkUtils.swift */,
+				7187A0A3203B5B5F00BB1E58 /* ConsoleUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7187A077203B5AF500BB1E58 /* ViewController.swift in Sources */,
+				7187A0A4203B5B5F00BB1E58 /* ConsoleUtils.swift in Sources */,
+				7187A0A2203B5B5100BB1E58 /* NetworkUtils.swift in Sources */,
 				7187A075203B5AF500BB1E58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
