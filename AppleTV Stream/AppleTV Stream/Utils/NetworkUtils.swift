@@ -36,7 +36,7 @@ class NetworkUtils {
      - Author: Mark Filter
      */
     
-    internal static func checkConnection(viewController: UIViewController, delegate: NetworkUtilsRESTDelegate, completion: ((_ alertController: UIAlertController, _ hasInternetConnection: Bool) -> (Void))?) {
+    internal static func checkConnection(viewController: UIViewController, completion: ((_ alertController: UIAlertController, _ hasInternetConnection: Bool) -> (Void))?) {
         
         var errorMessage = ""
         
@@ -116,7 +116,7 @@ class NetworkUtils {
      - delegate: The context registered for receiving callbacks.
      - Author: Mark Filter
      */
-    internal static func fetchImageFrom(url: URL, delegate: NetworkUtilsRESTDelegate, completion: @escaping ((_ image: UIImage?) -> (Void))) {
+    internal static func fetchImageFrom(url: URL, completion: @escaping ((_ image: UIImage?) -> (Void))) {
         var secureURL : URL = url
         if url.scheme == "http" {
             Log.i(TAG: TAG, message: "url.scheme = \(url.scheme ?? "no scheme")" )
@@ -154,25 +154,6 @@ class NetworkUtils {
         getData.resume()
     }
     
-}
-
-
-/**
- This protocol is for returning Network RESTful GET, POST, PUT, and DELETE calls made by the conforming entity.
- - Author: Mark Filter
- */
-@objc internal protocol NetworkUtilsRESTDelegate {
-    
-    
-    /**
-     Returns a UImage object from hte requested URL address.
-     - Parameters:
-     - image: The UIImage initialized from the returned Data.
-     - requestUrl: The URL used to make the request. Can be used in a Switch statement to handle multiple requests from the same requesting context.
-     - Author: Mark Filter
-     */
-    @objc optional func fetchImageComplete(image: UIImage, requestedUrl: URL)
-
 }
 
 

@@ -25,15 +25,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="jSJ-Je-7C9">
-                                <rect key="frame" x="114" y="235" width="768" height="761"/>
+                                <rect key="frame" x="114" y="235" width="672" height="761"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reuse_ID_ViewController_One_TableView" id="GL1-Gf-IaS">
+                                        <rect key="frame" x="0.0" y="66" width="672" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GL1-Gf-IaS" id="DWH-gp-ZdD">
+                                            <rect key="frame" x="0.0" y="0.0" width="672" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="a6P-4D-Aah"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="b47-IP-ebR"/>
                                 </connections>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="z5U-nS-IR6">
-                                <rect key="frame" x="906" y="235" width="900" height="761"/>
+                                <rect key="frame" x="810" y="235" width="996" height="761"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aps-ip-LYb">
                                     <size key="itemSize" width="524" height="342"/>
@@ -42,18 +52,18 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuse_ID_ViewController_One_CollectionView" id="Hbq-cS-fdh">
-                                        <rect key="frame" x="0.0" y="0.0" width="523.5" height="294.5"/>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuse_ID_ViewController_One_CollectionView" id="Hbq-cS-fdh" customClass="TitlesCollectionViewCell" customModule="AppleTV_Stream" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="86" width="1047" height="589"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="523.5" height="294.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1047" height="589"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwp-ox-gim">
-                                                    <rect key="frame" x="0.0" y="0.0" width="516" height="287"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="1039" height="589"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w3c-P8-mOK">
-                                                            <rect key="frame" x="0.0" y="0.0" width="516" height="287"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="1039" height="589"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,11 +78,14 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="Uwp-ox-gim" firstAttribute="leading" secondItem="Hbq-cS-fdh" secondAttribute="leading" id="9Aw-B9-NGq"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="Uwp-ox-gim" secondAttribute="bottom" id="A1S-BD-ltn"/>
                                             <constraint firstItem="Uwp-ox-gim" firstAttribute="top" secondItem="Hbq-cS-fdh" secondAttribute="top" id="CIh-hV-XKx"/>
+                                            <constraint firstAttribute="bottom" secondItem="Uwp-ox-gim" secondAttribute="bottom" id="GCw-CM-f51"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="Uwp-ox-gim" secondAttribute="trailing" id="eZs-dB-ryf"/>
                                         </constraints>
-                                        <size key="customSize" width="523.5" height="294.5"/>
+                                        <size key="customSize" width="1047" height="589"/>
+                                        <connections>
+                                            <outlet property="titleImageView" destination="w3c-P8-mOK" id="ZUs-Oa-khe"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -87,7 +100,7 @@
                             <constraint firstItem="z5U-nS-IR6" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="90" id="R1s-Ar-vhI"/>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="z5U-nS-IR6" secondAttribute="bottom" constant="24" id="Ysh-cT-iRG"/>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="z5U-nS-IR6" secondAttribute="trailing" constant="24" id="eJd-KZ-XC1"/>
-                            <constraint firstItem="jSJ-Je-7C9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="iTL-yW-g8I"/>
+                            <constraint firstItem="jSJ-Je-7C9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.35" id="iTL-yW-g8I"/>
                             <constraint firstItem="jSJ-Je-7C9" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="24" id="jVa-7Y-tq5"/>
                             <constraint firstItem="z5U-nS-IR6" firstAttribute="leading" secondItem="jSJ-Je-7C9" secondAttribute="trailing" constant="24" id="pox-Vi-EVr"/>
                             <constraint firstItem="jSJ-Je-7C9" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="90" id="xfm-IZ-Qo2"/>
@@ -95,6 +108,10 @@
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
                     <navigationItem key="navigationItem" id="1s5-Az-vTi"/>
+                    <connections>
+                        <outlet property="collectionViewVideos" destination="z5U-nS-IR6" id="Ji0-p2-7k5"/>
+                        <outlet property="tableViewStudios" destination="jSJ-Je-7C9" id="CU4-0N-g2v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

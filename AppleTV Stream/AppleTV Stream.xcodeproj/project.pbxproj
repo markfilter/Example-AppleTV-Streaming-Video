@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712C8828203BE5D900FB42F6 /* TitlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712C8827203BE5D900FB42F6 /* TitlesCollectionViewCell.swift */; };
 		7187A075203B5AF500BB1E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A074203B5AF500BB1E58 /* AppDelegate.swift */; };
 		7187A077203B5AF500BB1E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A076203B5AF500BB1E58 /* ViewController.swift */; };
 		7187A07A203B5AF500BB1E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7187A078203B5AF500BB1E58 /* Main.storyboard */; };
@@ -15,7 +16,8 @@
 		7187A092203B5AF500BB1E58 /* AppleTV_StreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A091203B5AF500BB1E58 /* AppleTV_StreamUITests.swift */; };
 		7187A0A2203B5B5100BB1E58 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A1203B5B5100BB1E58 /* NetworkUtils.swift */; };
 		7187A0A4203B5B5F00BB1E58 /* ConsoleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A3203B5B5F00BB1E58 /* ConsoleUtils.swift */; };
-		7187A0A7203B5DCD00BB1E58 /* VideoResourFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A6203B5DCD00BB1E58 /* VideoResourFiles.swift */; };
+		7187A0A7203B5DCD00BB1E58 /* RemoteVideoResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A6203B5DCD00BB1E58 /* RemoteVideoResources.swift */; };
+		7187A0A9203BDFB900BB1E58 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187A0A8203BDFB900BB1E58 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		712C8827203BE5D900FB42F6 /* TitlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesCollectionViewCell.swift; sourceTree = "<group>"; };
 		7187A071203B5AF500BB1E58 /* AppleTV Stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleTV Stream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7187A074203B5AF500BB1E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7187A076203B5AF500BB1E58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +53,8 @@
 		7187A093203B5AF500BB1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7187A0A1203B5B5100BB1E58 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		7187A0A3203B5B5F00BB1E58 /* ConsoleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleUtils.swift; sourceTree = "<group>"; };
-		7187A0A6203B5DCD00BB1E58 /* VideoResourFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResourFiles.swift; sourceTree = "<group>"; };
+		7187A0A6203B5DCD00BB1E58 /* RemoteVideoResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVideoResources.swift; sourceTree = "<group>"; };
+		7187A0A8203BDFB900BB1E58 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				7187A09F203B5B3200BB1E58 /* AppDelegate */,
 				7187A076203B5AF500BB1E58 /* ViewController.swift */,
 				7187A078203B5AF500BB1E58 /* Main.storyboard */,
+				712C8827203BE5D900FB42F6 /* TitlesCollectionViewCell.swift */,
 				7187A07B203B5AF500BB1E58 /* Assets.xcassets */,
 				7187A07D203B5AF500BB1E58 /* Info.plist */,
 			);
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				7187A074203B5AF500BB1E58 /* AppDelegate.swift */,
+				7187A0A8203BDFB900BB1E58 /* AppConstants.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -150,7 +156,7 @@
 		7187A0A5203B5DA600BB1E58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7187A0A6203B5DCD00BB1E58 /* VideoResourFiles.swift */,
+				7187A0A6203B5DCD00BB1E58 /* RemoteVideoResources.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,8 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712C8828203BE5D900FB42F6 /* TitlesCollectionViewCell.swift in Sources */,
 				7187A077203B5AF500BB1E58 /* ViewController.swift in Sources */,
-				7187A0A7203B5DCD00BB1E58 /* VideoResourFiles.swift in Sources */,
+				7187A0A9203BDFB900BB1E58 /* AppConstants.swift in Sources */,
+				7187A0A7203B5DCD00BB1E58 /* RemoteVideoResources.swift in Sources */,
 				7187A0A4203B5B5F00BB1E58 /* ConsoleUtils.swift in Sources */,
 				7187A0A2203B5B5100BB1E58 /* NetworkUtils.swift in Sources */,
 				7187A075203B5AF500BB1E58 /* AppDelegate.swift in Sources */,
